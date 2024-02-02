@@ -1,0 +1,155 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	font-family:'Roboto', sans-serif;
+}
+#head-sec{
+	width:100%;
+	background-color:#000;
+	color:#fff;
+	
+}
+.container{
+	width:90%;
+	margin:auto;
+	padding-top:30px;
+	padding-bottom:20px;
+	color:#fff;
+}
+.head-row{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	
+}
+/* .head-logo{ */
+	/* width:10%; */
+/* } */
+/* .head-logo span{ */
+	/* font-size:2rem; */
+	/* color:#FFA500; */
+/* } */
+
+/* .head-navbar{ */
+	/* width:50%; */
+	/* color:#fff; */
+/* } */
+.head-navbar a{
+	text-decoration:none;
+	
+}
+.head-navbar ul{
+	list-style-type:none;
+}
+nav ul{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+.navbar-link{
+	color:#fff;
+	font-weight:bold;
+}
+.navbar-link:hover{
+	color:#FFA500;
+}
+.navbar-link::after{
+	content:"";
+	height:2px;
+	width:100%;
+	display:block;
+	background-color:#FFA500;
+	
+	transform:scale(0);
+	transform-origin:left;
+	transition:all 1s linear;
+}
+.navbar-link:hover:after{
+	transform:scale(1);
+}
+.dropdown li:hover{
+	background-color:#FFA500;
+}
+/* .head-btn{ */
+	/* width:20%; */
+	/* padding-left:25px; */
+/* } */
+#start-btn{
+	text-decoration:none;
+	border:2px solid #FFA500;
+	padding:10px 20px;
+	border-radius:5px;
+	color:#fff;
+}
+#start-btn:hover{
+	background-color:#FFA500;
+}
+/* dropdown */
+.dropdown ul{
+	display:block;
+	color:#fff;
+	
+}
+.dropdown ul li{
+	padding:10px;
+	width:180px;
+
+}
+.dropdown-menu{
+	position:relative;
+}
+.dropdown{
+	position:absolute;
+	top:250%;
+	visibility:hidden;
+	
+	color:#000000;
+	background-color:#fff;
+	
+	transition:all 1s linear;
+}
+.dropdown-menu:hover .dropdown{
+	visibility:visible;
+	
+	
+	position:absolute;
+	top:150%;
+}
+
+/* deep dropdown */
+
+.deep-dropdown-menu{
+	position:relative;
+}
+.deep-dropdown{
+	background-color:#fff;
+	color:#000000;
+	visibility:hidden;
+	
+	position:absolute;
+	top:0;
+	right:80%;
+	
+	transition:all 1s linear;
+}
+.deep-dropdown-menu:hover .deep-dropdown{
+	visibility:visible;
+	
+	
+	position:absolute;
+	top:20%;
+	right:100%;
+}
+
+.navbar-btn-menu ul{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	align-items:flex-start;
+	width:100%;
+	padding:10px;
+
+}
+
